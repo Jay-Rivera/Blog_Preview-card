@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --yellow: #f1d04e;
+    --gray-950: #111111;
+    --gray-500: #6b6b6b;
+    --white: #ffffff;
+}
+
+/* REUSABLE STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Figtree", sans-serif;
+    line-height: 150%;
+    letter-spacing: 0;
+}
+
+.text__preset--1 {
+    font-size: 24px;
+    font-weight: bolder;
+    transition: all 300ms ease;
+}
+
+.text__preset--1:hover {
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+.text__preset--2 {
+    font-size: 16px;
+}
+
+.text__preset--3 {
+    font-size: 14px;
+}
+
+.text__preset--3b {
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+a {
+    color: var(--gray-500);
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+a:hover {
+    font-weight: 600;
+    color: var(--white);
+    text-shadow: 1px 1px 5px var(--gray-950);
+}
+
+/* END OF REUSABLE STYLES */
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--yellow);
+}
+
+.main {
+    background-color: var(--white);
+    border: 1px solid var(--gray-950);
+    width: 384px;
+    height: 522px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 24px;
+    border-radius: 20px;
+    box-shadow: 10px 10px var(--gray-950);
+}
+
+.bottom__container {
+    gap: 12px;
+}
+
+.main__img {
+    border-radius: 10px;
+}
+
+.tag__section {
+    margin-bottom: 12px;
+}
+
+.tag {
+    padding: 4px 12px;
+    background-color: var(--yellow);
+    display: inline-block;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+.title {
+    margin-bottom: 12px;
+}
+
+.author__section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    margin-top: 12px;
+}
+
+.author__img {
+    width: 32px;
+    margin-right: 12px;
+}
+
+footer {
+    position: absolute;
+    bottom: 20px;
+}
